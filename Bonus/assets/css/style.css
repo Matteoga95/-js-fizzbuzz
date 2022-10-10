@@ -2,21 +2,56 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    background-image: url("../img/background.webp");
 }
 
-ul {
+h1 {
+    display: block;
+    background-color: black;
+    color: white;
+    width: 100%;
+    font-family: 'Berkshire Swash', cursive;
+    padding: 2rem;
+ }
+
+ .container{
+    background-color:#F9F2E5;
+ }
+section {
     width: 85%;
     margin: auto;
     display: flex;
     justify-content: space-around;
-    text-align: center;
     flex-wrap: wrap;
-    list-style: none;
+    align-items: center;
     padding-top: 2rem;
+text-align: center;
 }
 
-li {
-    height: 80px;
-    width: 80px;
+section>div {
+    width: 100px;
+    padding: 40px 0px;
+  
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 24px;
 
+}
+
+.FbStyle{
+    background-image: url("../img//fizzbuzz.webp");
+    background-size: cover;
+}
+.FStyle{
+    background-image: url("../img/fizz.webp");
+    background-size: cover;
+}
+.BStyle{
+    background-image: url("../img/buzz.png");
+    background-size: cover;
+}
+.bg_bee{
+    background-image: url("../img/backgr.webp");
+    height: 90px;
+    background-size: cover;
 }

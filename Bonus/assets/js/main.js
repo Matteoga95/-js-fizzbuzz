@@ -9,30 +9,32 @@
 //cicliamo i numeri da 1 a 100
 for (let num = 1; num < 101; num++) {
 
-    let li = document.createElement('li');
+    let div = document.createElement('div');
    
     //se il numero che sto ciclando è un multiplo sia di 5 che di 3 stampo a console FizzBuzz  
     if (num % 15 === 0) {
         console.log("FizzBuzz");
       
-        li.textContent= "FizzBuzz";
+        div.textContent= "FizzBuzz";
+        div.classList.add("FbStyle");
     }
     //se il numero che sto ciclando è un multiplo di 3 stampo a console Fizz
     else if (num % 3 === 0) {
         console.log("Fizz");
-        li.textContent= "Fizz";
-        
+        // div.textContent= "Fizz";
+        div.classList.add("FStyle");
     }
     //se il numero che sto ciclando è un multiplo di 5 stampo a console Buzz
     else if (num % 5 === 0) {
         console.log("Buzz");
-        li.textContent= "Buzz";
+        // div.textContent= "Buzz";
+        div.classList.add("BStyle");
     }
     //se non è nulla di quello sopra stampo il numero normalmente
     else {
         console.log(num);
-        li.textContent= num;
+        div.textContent= num;
     }
 
-    document.querySelector("ul").appendChild(li)
+    document.getElementById("number-container").appendChild(div)
 }
