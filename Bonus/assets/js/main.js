@@ -16,19 +16,19 @@ for (let num = 1; num < 101; num++) {
         console.log("FizzBuzz");
       
         div.textContent= "FizzBuzz";
-        div.classList.add("FbStyle");
+        div.classList.add("fizz-buzz-style");
     }
     //se il numero che sto ciclando è un multiplo di 3 stampo a console Fizz
     else if (num % 3 === 0) {
         console.log("Fizz");
         // div.textContent= "Fizz";
-        div.classList.add("FStyle");
+        div.classList.add("fizz-style");
     }
     //se il numero che sto ciclando è un multiplo di 5 stampo a console Buzz
     else if (num % 5 === 0) {
         console.log("Buzz");
         // div.textContent= "Buzz";
-        div.classList.add("BStyle");
+        div.classList.add("buzz-style");
     }
     //se non è nulla di quello sopra stampo il numero normalmente
     else {
